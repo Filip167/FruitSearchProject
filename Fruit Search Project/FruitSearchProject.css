@@ -1,0 +1,64 @@
+body {
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+#search-bar {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding-right: 30px;
+  background: linear-gradient(to right, #e8505b, #ff6b6b);
+  color: white;
+}
+
+#search-results {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  position: absolute;
+  width: 200px;
+  background: linear-gradient(to right, #e8505b, #ff6b6b);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: none;
+}
+
+#search-results li {
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(to right, #d13640, #df4343);
+}
+
+#search-results li:hover {
+  background: linear-gradient(to right, #e8505b, #ff6b6b);
+  background-color: #e8505b; 
+  
+}
+
+.magnifying-glass {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.magnifying-glass:hover {
+  color: white;
+  cursor: pointer;
+}
